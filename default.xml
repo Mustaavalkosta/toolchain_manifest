@@ -7,6 +7,9 @@
   <remote  name="linaro-android"
            fetch="git://android.git.linaro.org/" />
 
+  <remote  name="github"
+           fetch="git://github.com/Mustaavalkosta/" />
+
   <default revision="master"
            remote="aosp"
            sync-j="4" />
@@ -45,5 +48,8 @@
   <project name="platform/external/svox" path="android/external/svox" revision="refs/tags/android-4.2.2_r1" />
   <project name="platform/system/core" path="android/system/core" revision="refs/tags/android-4.2.2_r1" />
   <project path="android/bionic" name="platform/bionic" revision="refs/tags/android-4.2.2_r1" />
+
+  <!-- Mustaavalkosta -->
+  <project path="manifest" name="toolchain_manifest" remote="github" />
 
 </manifest>
