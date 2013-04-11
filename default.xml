@@ -13,21 +13,23 @@
 
   <!-- AOSP -->
   <project path="benchmark" name="toolchain/benchmark" />
-  <project path="binutils" name="toolchain/binutils" />
   <project path="build" name="toolchain/build" />
   <project path="clang" name="toolchain/clang" revision="release_32" />
-  <project path="cloog" name="toolchain/cloog" />
   <project path="expat" name="toolchain/expat" />
-  <project path="gcc" name="toolchain/gcc" />
-  <project path="gdb" name="toolchain/gdb" />
-  <project path="gmp" name="toolchain/gmp" />
   <project path="isl" name="toolchain/isl" />
   <project path="llvm" name="toolchain/llvm" revision="release_32" />
-  <project path="mpc" name="toolchain/mpc" />
-  <project path="mpfr" name="toolchain/mpfr" />
   <project path="perl" name="toolchain/perl" />
   <project path="ppl" name="toolchain/ppl" />
   <project path="python" name="toolchain/python" />
+
+  <!-- Linaro -->
+  <project path="binutils/binutils-current" name="toolchain/binutils-current" remote="linaro-android" revision="linaro-2.23.1" />
+  <project path="cloog/cloog-current" name="toolchain/cloog-current" remote="linaro-android" revision="linaro-0.18.0" />
+  <project path="gcc-patches" name="toolchain/gcc-patches" remote="linaro-android" revision="master" />
+  <project path="gdb/gdb-current" name="toolchain/gdb-current" remote="linaro-android" revision="linaro-7.5-2012.12-1" />
+  <project path="gmp/gmp-current" name="toolchain/gmp-current" remote="linaro-android" revision="linaro-5.1.1" />
+  <project path="mpc/mpc-current" name="toolchain/mpc-current" remote="linaro-android" revision="linaro-1.0.1" />
+  <project path="mpfr/mpfr-current" name="toolchain/mpfr-current" remote="linaro-android" revision="linaro-3.1.2" />
 
   <!-- Bionic and the minimal parts of the Android build system needed to build it - needed for libgomp and friends -->
   <project path="android/build" name="platform/build" revision="refs/tags/android-4.2.2_r1">
