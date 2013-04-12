@@ -15,13 +15,13 @@
            sync-j="4" />
 
   <!-- AOSP -->
-  <project path="build" name="toolchain/build" remote="aosp" />
+  <project path="build" name="toolchain/build" remote="aosp" revision="master" />
   <project path="clang" name="toolchain/clang" remote="aosp" revision="release_32" />
-  <project path="expat" name="toolchain/expat" remote="aosp" />
-  <project path="isl" name="toolchain/isl" remote="aosp" />
+  <project path="expat" name="toolchain/expat" remote="aosp" revision="master" />
+  <project path="isl" name="toolchain/isl" remote="aosp" revision="master" />
   <project path="llvm" name="toolchain/llvm" remote="aosp" revision="release_32" />
-  <project path="perl" name="toolchain/perl" remote="aosp" />
-  <project path="python" name="toolchain/python" remote="aosp" />
+  <project path="perl" name="toolchain/perl" remote="aosp" revision="master" />
+  <project path="python" name="toolchain/python" remote="aosp" revision="master" />
 
   <!-- Linaro -->
   <project path="benchmark" name="toolchain/benchmark" revision="master" />
