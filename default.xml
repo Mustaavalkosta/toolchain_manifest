@@ -15,7 +15,6 @@
            sync-j="4" />
 
   <!-- AOSP -->
-  <project path="build" name="toolchain/build" remote="aosp" revision="master" />
   <project path="clang" name="toolchain/clang" remote="aosp" revision="release_32" />
   <project path="expat" name="toolchain/expat" remote="aosp" revision="master" />
   <project path="isl" name="toolchain/isl" remote="aosp" revision="master" />
@@ -49,6 +48,7 @@
   <project path="android/bionic" name="platform/bionic" revision="linaro_android_4.1.2" />
 
   <!-- Mustaavalkosta -->
+  <project path="build" name="toolchain_build" remote="github" revision="master" />
   <project path="manifest" name="toolchain_manifest" remote="github" revision="master" />
   <project path="ppl" name="toolchain_ppl" remote="github" revision="master" />
 
