@@ -50,6 +50,6 @@
 
   <!-- Mustaavalkosta -->
   <project path="manifest" name="toolchain_manifest" remote="github" />
-  <project path="ppl" name="Mustaavalkosta/toolchain_ppl" remote="github" />
+  <project path="ppl" name="toolchain_ppl" remote="github" />
 
 </manifest>
