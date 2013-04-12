@@ -22,7 +22,6 @@
   <project path="isl" name="toolchain/isl" />
   <project path="llvm" name="toolchain/llvm" revision="release_32" />
   <project path="perl" name="toolchain/perl" />
-  <project path="ppl" name="toolchain/ppl" />
   <project path="python" name="toolchain/python" />
 
   <!-- Linaro -->
@@ -51,5 +50,6 @@
 
   <!-- Mustaavalkosta -->
   <project path="manifest" name="toolchain_manifest" remote="github" />
+  <project path="ppl" name="Mustaavalkosta/toolchain_ppl" remote="github" />
 
 </manifest>
