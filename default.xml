@@ -49,7 +49,7 @@
   <project path="android/bionic" name="platform/bionic" revision="linaro_android_4.1.2" />
 
   <!-- Mustaavalkosta -->
-  <project path="manifest" name="toolchain_manifest" remote="github" />
-  <project path="ppl" name="toolchain_ppl" remote="github" />
+  <project path="manifest" name="toolchain_manifest" remote="github" revision="master" />
+  <project path="ppl" name="toolchain_ppl" remote="github" revision="master" />
 
 </manifest>
