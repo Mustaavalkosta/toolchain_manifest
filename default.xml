@@ -49,6 +49,7 @@
 
   <!-- Mustaavalkosta -->
   <project path="build" name="toolchain_build" remote="github" revision="master" />
+  <project path="gcc" name="toolchain_gcc" remote="github" revision="master" />
   <project path="manifest" name="toolchain_manifest" remote="github" revision="master" />
   <project path="ppl" name="toolchain_ppl" remote="github" revision="master" />
 
