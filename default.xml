@@ -32,6 +32,21 @@
   <project path="mpc/mpc-current" name="toolchain/mpc-current" revision="linaro-1.0.1" />
   <project path="mpfr/mpfr-current" name="toolchain/mpfr-current" revision="linaro-3.1.2" />
 
+  <!-- Bionic and the minimal parts of the Android build system needed to build it - needed for libgomp and friends -->
+  <project path="android/build" name="platform/build" revision="linaro_android_4.1.2">
+    <copyfile dest="android/Makefile" src="core/root.mk"/>
+  </project>
+  <project path="android/device/common" name="device/common" revision="master" />
+  <project path="android/device/linaro/common" name="device/linaro/common" revision="linaro-ics"/>
+  <project path="android/device/linaro/pandaboard" name="device/linaro/pandaboard" revision="linaro-jb"/>
+  <project path="android/hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" revision="linaro_android_4.1.2" />
+  <project path="android/frameworks/base" name="platform/frameworks/base" revision="linaro_android_4.1.2" />
+  <project path="android/frameworks/native" name="platform/frameworks/native" revision="linaro_android_4.1.2" />
+  <project path="android/external/elfutils" name="platform/external/elfutils" revision="linaro_android_4.1.2" />
+  <project path="android/external/svox" name="platform/external/svox" revision="refs/tags/android-4.1.2_r1" />
+  <project path="android/system/core" name="platform/system/core" revision="linaro_android_4.1.2" />
+  <project path="android/bionic" name="platform/bionic" revision="linaro_android_4.1.2" />
+
   <!-- Mustaavalkosta -->
   <project path="build" name="toolchain_build" remote="github" revision="master" />
   <project path="manifest" name="toolchain_manifest" remote="github" revision="master" />
