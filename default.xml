@@ -12,6 +12,7 @@
 
   <default revision="master"
            remote="aosp"
+           sync-c="true"
            sync-j="8" />
 
   <!-- AOSP -->
