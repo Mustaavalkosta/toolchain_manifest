@@ -50,7 +50,7 @@
 
   <!-- Mustaavalkosta -->
   <project path="build" name="toolchain_build" remote="github" />
-  <project path="gcc" name="toolchain_gcc" remote="github" />
+  <project path="gcc" name="toolchain_gcc-aosp" remote="github" />
   <project path="manifest" name="toolchain_manifest" remote="github" />
   <project path="ppl" name="toolchain_ppl" remote="github" />
 
