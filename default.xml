@@ -10,6 +10,9 @@
   <remote  name="github"
            fetch="git://github.com/Mustaavalkosta/" />
 
+  <remote  name="gnu-gcc"
+           fetch="git://gcc.gnu.org/git/" />
+
   <default revision="master"
            remote="aosp"
            sync-c="true"
@@ -38,6 +41,9 @@
   <project path="android/external/svox" name="platform/external/svox" revision="refs/tags/android-4.2.2_r1.2" />
   <project path="android/system/core" name="platform/system/core" revision="refs/tags/android-4.2.2_r1.2" />
   <project path="android/bionic" name="platform/bionic" revision="refs/tags/android-4.2.2_r1.2" />
+
+  <!-- GNU GCC -->
+  <project path="gcc/gcc-4.8" name="gcc" remote="gnu-gcc" revision="gcc-4_8-branch" />
 
   <!-- Mustaavalkosta -->
   <project path="binutils" name="toolchain_binutils" remote="github" />
