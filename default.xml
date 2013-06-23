@@ -19,19 +19,10 @@
   <project path="benchmark" name="toolchain/benchmark" />
   <project path="clang" name="toolchain/clang" revision="release_33" />
   <project path="expat" name="toolchain/expat" />
-  <project path="isl" name="toolchain/isl" />
   <project path="llvm" name="toolchain/llvm" revision="release_33" />
   <project path="perl" name="toolchain/perl" />
   <project path="python" name="toolchain/python" />
 
-  <!-- Linaro -->
-  <project path="binutils/binutils-current" name="toolchain/binutils-current" remote="linaro-android" revision="linaro-2.23.52.0.2" />
-  <project path="cloog/cloog-current" name="toolchain/cloog-current" remote="linaro-android" revision="linaro-0.18.0" />
-  <project path="gcc-patches" name="toolchain/gcc-patches" remote="linaro-android" />
-  <project path="gdb/gdb-current" name="toolchain/gdb-current" remote="linaro-android" revision="linaro-7.5-2012.12-1" />
-  <project path="gmp/gmp-current" name="toolchain/gmp-current" remote="linaro-android" revision="linaro-5.1.1" />
-  <project path="mpc/mpc-current" name="toolchain/mpc-current" remote="linaro-android" revision="linaro-1.0.1" />
-  <project path="mpfr/mpfr-current" name="toolchain/mpfr-current" remote="linaro-android" revision="linaro-3.1.2" />
 
   <!-- Bionic and the minimal parts of the Android build system needed to build it - needed for libgomp and friends -->
   <project path="android/build" name="platform/build" revision="refs/tags/android-4.2.2_r1.2">
@@ -49,8 +40,14 @@
   <project path="android/bionic" name="platform/bionic" revision="refs/tags/android-4.2.2_r1.2" />
 
   <!-- Mustaavalkosta -->
+  <project path="binutils" name="toolchain_binutils" remote="github" />
   <project path="build" name="toolchain_build" remote="github" />
-  <project path="gcc" name="toolchain_gcc-aosp" remote="github" />
+  <project path="cloog" name="toolchain_cloog" remote="github" />
+  <project path="gdb" name="toolchain_gdb" remote="github" />
+  <project path="gmp" name="toolchain_gmp" remote="github" />
+  <project path="isl" name="toolchain_isl" remote="github" />
+  <project path="mpc" name="toolchain_mpc" remote="github" />
+  <project path="mpfr" name="toolchain_mpfr" remote="github" />
   <project path="manifest" name="toolchain_manifest" remote="github" />
   <project path="ppl" name="toolchain_ppl" remote="github" />
 
