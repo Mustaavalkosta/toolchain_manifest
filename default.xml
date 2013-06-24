@@ -43,12 +43,12 @@
   <project path="android/bionic" name="platform/bionic" revision="refs/tags/android-4.2.2_r1.2" />
 
   <!-- GNU GCC -->
-  <project path="gcc/gcc-4.8" name="gcc" remote="gnu-gcc" revision="gcc-4_8-branch" />
 
   <!-- Mustaavalkosta -->
   <project path="binutils" name="toolchain_binutils" remote="github" />
   <project path="build" name="toolchain_build" remote="github" />
   <project path="cloog" name="toolchain_cloog" remote="github" />
+  <project path="gcc/gcc-4.8" name="toolchain_gcc-4.8" remote="github" />
   <project path="gdb" name="toolchain_gdb" remote="github" />
   <project path="gmp" name="toolchain_gmp" remote="github" />
   <project path="isl" name="toolchain_isl" remote="github" />
