@@ -20,9 +20,7 @@
 
   <!-- AOSP -->
   <project path="benchmark" name="toolchain/benchmark" />
-  <project path="clang" name="toolchain/clang" revision="release_33" />
   <project path="expat" name="toolchain/expat" />
-  <project path="llvm" name="toolchain/llvm" revision="release_33" />
   <project path="perl" name="toolchain/perl" />
   <project path="python" name="toolchain/python" />
 
@@ -32,8 +30,6 @@
     <copyfile dest="android/Makefile" src="core/root.mk"/>
   </project>
   <project path="android/device/common" name="device/common" revision="refs/tags/android-4.2.2_r1.2" />
-  <project path="android/device/linaro/common" name="device/linaro/common" remote="linaro-android" revision="linaro-jb"/>
-  <project path="android/device/linaro/pandaboard" name="device/linaro/pandaboard" remote="linaro-android" revision="linaro-jb"/>
   <project path="android/hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" revision="refs/tags/android-4.2.2_r1.2" />
   <project path="android/frameworks/base" name="platform/frameworks/base" revision="refs/tags/android-4.2.2_r1.2" />
   <project path="android/frameworks/native" name="platform/frameworks/native" revision="refs/tags/android-4.2.2_r1.2" />
