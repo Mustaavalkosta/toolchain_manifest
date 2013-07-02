@@ -24,22 +24,6 @@
   <project path="perl" name="toolchain/perl" />
   <project path="python" name="toolchain/python" />
 
-
-  <!-- Bionic and the minimal parts of the Android build system needed to build it - needed for libgomp and friends -->
-  <project path="android/build" name="platform/build" revision="refs/tags/android-4.2.2_r1.2">
-    <copyfile dest="android/Makefile" src="core/root.mk"/>
-  </project>
-  <project path="android/device/common" name="device/common" revision="refs/tags/android-4.2.2_r1.2" />
-  <project path="android/hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" revision="refs/tags/android-4.2.2_r1.2" />
-  <project path="android/frameworks/base" name="platform/frameworks/base" revision="refs/tags/android-4.2.2_r1.2" />
-  <project path="android/frameworks/native" name="platform/frameworks/native" revision="refs/tags/android-4.2.2_r1.2" />
-  <project path="android/external/elfutils" name="platform/external/elfutils" revision="refs/tags/android-4.2.2_r1.2" />
-  <project path="android/external/svox" name="platform/external/svox" revision="refs/tags/android-4.2.2_r1.2" />
-  <project path="android/system/core" name="platform/system/core" revision="refs/tags/android-4.2.2_r1.2" />
-  <project path="android/bionic" name="platform/bionic" revision="refs/tags/android-4.2.2_r1.2" />
-
-  <!-- GNU GCC -->
-
   <!-- Mustaavalkosta -->
   <project path="binutils" name="toolchain_binutils" remote="github" />
   <project path="build" name="toolchain_build" remote="github" />
