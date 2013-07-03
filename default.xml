@@ -20,13 +20,27 @@
 
   <!-- AOSP -->
   <project path="benchmark" name="toolchain/benchmark" />
-  <project path="expat" name="toolchain/expat" />
-  <project path="perl" name="toolchain/perl" />
-  <project path="python" name="toolchain/python" />
+
+  <!-- Linaro -->
+  <!-- Bionic and the minimal parts of the Android build system needed to build it - needed for libgomp and friends -->
+  <project path="android/build" name="platform/build" remote="linaro-android" revision="linaro_android_4.1.2">
+      <copyfile dest="android/Makefile" src="core/root.mk"/>
+  </project>
+  <project name="device/common" path="android/device/common" remote="linaro-android" revision="master"/>
+  <project name="device/linaro/common" path="android/device/linaro/common" remote="linaro-android" revision="linaro-ics"/>
+  <project name="device/linaro/pandaboard" path="android/device/linaro/pandaboard" remote="linaro-android" revision="linaro-jb"/>
+  <project name="platform/hardware/ti/omap4xxx" path="android/hardware/ti/omap4xxx" remote="linaro-android" revision="linaro_android_4.1.2"/>
+  <project name="platform/frameworks/base" path="android/frameworks/base" remote="linaro-android" revision="linaro_android_4.1.2"/>
+  <project name="platform/frameworks/native" path="android/frameworks/native" remote="linaro-android" revision="linaro_android_4.1.2"/>
+  <project name="platform/external/elfutils" path="android/external/elfutils" remote="linaro-android" revision="linaro_android_4.1.2"/>
+  <project name="platform/external/svox" path="android/external/svox" remote="linaro-android" revision="refs/tags/android-4.1.2_r1"/>
+  <project name="platform/system/core" path="android/system/core" remote="linaro-android" revision="linaro_android_4.1.2"/>
+  <project path="android/bionic" name="platform/bionic" remote="linaro-android" revision="linaro_android_4.1.2"/>
+  </manifest>
 
   <!-- Mustaavalkosta -->
   <project path="binutils" name="toolchain_binutils" remote="github" />
-  <project path="build" name="toolchain_build" remote="github" />
+  <project path="build" name="toolchain_build" remote="github" revision="linaro-master" />
   <project path="cloog" name="toolchain_cloog" remote="github" />
   <project path="gcc/gcc-4.8" name="toolchain_gcc-4.8" remote="github" />
   <project path="gdb" name="toolchain_gdb" remote="github" />
