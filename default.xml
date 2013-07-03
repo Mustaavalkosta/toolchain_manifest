@@ -36,7 +36,6 @@
   <project name="platform/external/svox" path="android/external/svox" remote="linaro-android" revision="refs/tags/android-4.1.2_r1"/>
   <project name="platform/system/core" path="android/system/core" remote="linaro-android" revision="linaro_android_4.1.2"/>
   <project path="android/bionic" name="platform/bionic" remote="linaro-android" revision="linaro_android_4.1.2"/>
-  </manifest>
 
   <!-- Mustaavalkosta -->
   <project path="binutils" name="toolchain_binutils" remote="github" />
