@@ -26,7 +26,7 @@
 
   <!-- Mustaavalkosta -->
   <project path="binutils" name="toolchain_binutils" remote="github" />
-  <project path="binutils/binutils-upstream" name="toolchain_binutils" remote="github" revision="upstream" />
+  <project path="binutils/binutils-upstream" name="toolchain_binutils-upstream" remote="github" />
   <project path="build" name="toolchain_build" remote="github" />
   <project path="cloog" name="toolchain_cloog" remote="github" />
   <project path="gcc/gcc-4.8" name="toolchain_gcc-4.8" remote="github" />
